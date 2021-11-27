@@ -1,5 +1,5 @@
 import React from "react";
-import { Document, DocumentComponent, ComponentProps } from "./common";
+import { Document, DocumentComponent } from "./common";
 import { document as doc } from "./document.json";
 require(`./themes/${doc.theme}.css`);
 
