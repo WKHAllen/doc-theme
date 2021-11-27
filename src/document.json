@@ -2,6 +2,12 @@
   "document": {
     "name": "Doc Theme",
     "theme": "default",
-    "content": []
+    "content": [
+      {
+        "type": "container",
+        "classes": ["message"],
+        "content": "Hello, world!"
+      }
+    ]
   }
 }

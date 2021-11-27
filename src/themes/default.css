@@ -1,0 +1,13 @@
+.message {
+  text-align: center;
+  color: white;
+  background: #303446;
+  background: radial-gradient(circle, #2b3047 0%, #0e0c2f 100%);
+  text-shadow: 2px 2px 4px black;
+  font-size: 32pt;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
