@@ -23,3 +23,18 @@
 .text-justified {
   text-align: justify;
 }
+
+.standard-link {
+  color: #2323ff;
+  text-decoration: none;
+  transition: color 0.1s ease;
+}
+
+.standard-link:hover {
+  color: #0000dc;
+  text-decoration: underline;
+}
+
+.standard-link:active {
+  color: #0000cd;
+}
