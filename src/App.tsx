@@ -1,7 +1,6 @@
 import React from "react";
 import { Document, DocumentComponent } from "./common";
 import { document as doc } from "./document.json";
-require(`./themes/${doc.theme}.css`);
 
 /**
  * The state of the app component.
@@ -40,9 +39,7 @@ export default class App extends React.Component<{}, AppState> {
         renderChildren={(c: DocumentComponent<any>[]) =>
           this.renderComponents(c)
         }
-        renderContent={(c: DocumentComponent<T>) =>
-          this.renderContent(component)
-        }
+        renderContent={(c: DocumentComponent<T>) => this.renderContent(c)}
       ></Component>
     );
   }
@@ -74,6 +71,19 @@ export default class App extends React.Component<{}, AppState> {
   }
 
   public render() {
-    return <>{this.renderComponents(this.state.doc.content)}</>;
+    return (
+      <>
+        {!process.env.NODE_ENV || process.env.NODE_ENV === "development" ? (
+          !require(`./themes/${doc.theme}.css`) || ""
+        ) : (
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href={`/themes/${this.state.doc.theme}.css`}
+          />
+        )}
+        {this.renderComponents(this.state.doc.content)}
+      </>
+    );
   }
 }
