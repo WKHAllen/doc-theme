@@ -1,7 +1,3 @@
-body {
-  text-align: justify;
-}
-
 .outer {
   color: white;
   background: #0e0c2f;
@@ -15,4 +11,15 @@ body {
 .inner {
   max-width: 800px;
   margin: auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.125);
+  border-radius: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justified {
+  text-align: justify;
 }

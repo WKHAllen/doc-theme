@@ -11,6 +11,10 @@ interface TextProps {}
  */
 export default class Text extends React.Component<ComponentProps<TextProps>> {
   public render() {
-    return <p>{this.props.renderContent(this.props.component)}</p>;
+    return (
+      <p className={this.props.component.classes?.join(" ")}>
+        {this.props.renderContent(this.props.component)}
+      </p>
+    );
   }
 }

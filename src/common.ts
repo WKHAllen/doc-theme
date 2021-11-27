@@ -1,11 +1,11 @@
 /**
  * A component in the document.
  */
-export interface DocumentComponent<T> {
+export interface DocumentComponent<P = {}, C = string> {
   type: string;
-  properties?: T;
+  properties?: P;
   classes?: string[];
-  content?: string;
+  content?: C;
   children?: DocumentComponent<any>[];
 }
 

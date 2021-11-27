@@ -12,7 +12,50 @@
             "classes": ["inner"],
             "children": [
               {
+                "type": "header",
+                "content": "Header 1",
+                "properties": {
+                  "size": 1
+                }
+              },
+              {
+                "type": "header",
+                "content": "Header 2",
+                "properties": {
+                  "size": 2
+                }
+              },
+              {
+                "type": "header",
+                "content": "Header 3",
+                "properties": {
+                  "size": 3
+                }
+              },
+              {
+                "type": "header",
+                "content": "Header 4",
+                "properties": {
+                  "size": 4
+                }
+              },
+              {
+                "type": "header",
+                "content": "Header 5",
+                "properties": {
+                  "size": 5
+                }
+              },
+              {
+                "type": "header",
+                "content": "Header 6",
+                "properties": {
+                  "size": 6
+                }
+              },
+              {
                 "type": "text",
+                "classes": ["text-justified"],
                 "content": "This is a demonstration of doc-theme. To switch themes, edit the theme name in document.json to the name of a CSS file in the themes directory. Custom themes can be created to vastly change the appearance of the document."
               }
             ]
