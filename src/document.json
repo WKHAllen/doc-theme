@@ -131,6 +131,162 @@
                     "content": "Table"
                   }
                 ]
+              },
+              {
+                "type": "text",
+                "content": "See more info on each built-in component:"
+              },
+              {
+                "type": "table",
+                "classes": ["table no-margin"],
+                "properties": {
+                  "headers": [
+                    {
+                      "type": "text",
+                      "content": "Component"
+                    },
+                    {
+                      "type": "text",
+                      "content": "HTML equivalent"
+                    },
+                    {
+                      "type": "text",
+                      "content": "Properties"
+                    },
+                    {
+                      "type": "text",
+                      "content": "Children"
+                    }
+                  ]
+                },
+                "content": [
+                  [
+                    {
+                      "type": "text",
+                      "content": "Container"
+                    },
+                    {
+                      "type": "text",
+                      "content": "div, span"
+                    },
+                    {
+                      "type": "text",
+                      "content": "inline? (boolean)"
+                    },
+                    {
+                      "type": "text",
+                      "content": "List of components"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "content": "Text"
+                    },
+                    {
+                      "type": "text",
+                      "content": "p"
+                    },
+                    {
+                      "type": "text",
+                      "content": ""
+                    },
+                    {
+                      "type": "text",
+                      "content": "List of components"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "content": "Header"
+                    },
+                    {
+                      "type": "text",
+                      "content": "h1, h2, h3, h4, h5, h6"
+                    },
+                    {
+                      "type": "text",
+                      "content": "size? (number)"
+                    },
+                    {
+                      "type": "text",
+                      "content": "List of components"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "content": "Link"
+                    },
+                    {
+                      "type": "text",
+                      "content": "a"
+                    },
+                    {
+                      "type": "text",
+                      "content": "destination? (string), newTab (boolean)"
+                    },
+                    {
+                      "type": "text",
+                      "content": "List of components"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "content": "Image"
+                    },
+                    {
+                      "type": "text",
+                      "content": "img"
+                    },
+                    {
+                      "type": "text",
+                      "content": "source (string), width? (number), height? (number)"
+                    },
+                    {
+                      "type": "text",
+                      "content": "List of components"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "content": "List"
+                    },
+                    {
+                      "type": "text",
+                      "content": "ul, ol"
+                    },
+                    {
+                      "type": "text",
+                      "content": "ordered? (boolean)"
+                    },
+                    {
+                      "type": "text",
+                      "content": "List of components"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "content": "Table"
+                    },
+                    {
+                      "type": "text",
+                      "content": "table"
+                    },
+                    {
+                      "type": "text",
+                      "content": "headers? (list of components)"
+                    },
+                    {
+                      "type": "text",
+                      "content": "2D list of components"
+                    }
+                  ]
+                ]
               }
             ]
           }

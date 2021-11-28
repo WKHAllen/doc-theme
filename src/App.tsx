@@ -31,19 +31,23 @@ export default class App extends React.Component<{}, AppState> {
    * @param component The component to render.
    * @returns The resulting rendered component.
    */
-  public renderComponent<T>(component: DocumentComponent<T>) {
+  public renderComponent<P = {}, C = string>(
+    component: DocumentComponent<P, C>
+  ) {
     const Component = require(`./components/${component.type}`).default;
     return (
       <Component
         component={component}
-        renderComponent={(c: DocumentComponent<T>) => this.renderComponent(c)}
-        renderComponents={(c: DocumentComponent<any>[]) =>
+        renderComponent={(c: DocumentComponent<P, C>) =>
+          this.renderComponent(c)
+        }
+        renderComponents={(c: DocumentComponent<any, any>[]) =>
           this.renderComponents(c)
         }
-        renderChildren={(c: DocumentComponent<any>[]) =>
+        renderChildren={(c: DocumentComponent<any, any>[]) =>
           this.renderComponents(c)
         }
-        renderContent={(c: DocumentComponent<T>) => this.renderContent(c)}
+        renderContent={(c: DocumentComponent<P, C>) => this.renderContent(c)}
       ></Component>
     );
   }
@@ -54,7 +58,7 @@ export default class App extends React.Component<{}, AppState> {
    * @param components The components to render.
    * @returns The resulting rendered components.
    */
-  public renderComponents(components: DocumentComponent<any>[]) {
+  public renderComponents(components: DocumentComponent<any, any>[]) {
     return (
       <>{components.map((component) => this.renderComponent(component))}</>
     );
@@ -66,7 +70,7 @@ export default class App extends React.Component<{}, AppState> {
    * @param component The component to render.
    * @returns The resulting rendered component.
    */
-  public renderContent<T>(component: DocumentComponent<T>) {
+  public renderContent<P, C>(component: DocumentComponent<P, C>) {
     return (
       <>
         {component.content ?? ""}
