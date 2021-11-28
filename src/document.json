@@ -259,6 +259,10 @@
                     }
                   ]
                 ]
+              },
+              {
+                "type": "text",
+                "content": "Custom components can be created to provide additional behavior to documents. See the implementation for the built-in components for details."
               }
             ]
           }
