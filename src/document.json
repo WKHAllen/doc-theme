@@ -93,6 +93,44 @@
                   "source": "/favicon.ico"
                 },
                 "content": "Favicon"
+              },
+              {
+                "type": "text",
+                "content": "The project supports the following components out of the box:"
+              },
+              {
+                "type": "list",
+                "classes": ["no-margin"],
+                "children": [
+                  {
+                    "type": "text",
+                    "content": "Container"
+                  },
+                  {
+                    "type": "text",
+                    "content": "Text"
+                  },
+                  {
+                    "type": "text",
+                    "content": "Header"
+                  },
+                  {
+                    "type": "text",
+                    "content": "Link"
+                  },
+                  {
+                    "type": "text",
+                    "content": "Image"
+                  },
+                  {
+                    "type": "text",
+                    "content": "List"
+                  },
+                  {
+                    "type": "text",
+                    "content": "Table"
+                  }
+                ]
               }
             ]
           }

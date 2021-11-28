@@ -42,3 +42,8 @@
 .pill {
   border-radius: 100vw;
 }
+
+.no-margin,
+.no-margin * {
+  margin: 0;
+}

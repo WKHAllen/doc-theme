@@ -21,8 +21,10 @@ export interface Document {
 /**
  * The standard component properties.
  */
-export interface ComponentProps<T> {
-  component: DocumentComponent<T>;
+export interface ComponentProps<P = {}, C = string> {
+  component: DocumentComponent<P, C>;
+  renderComponent: (component: DocumentComponent<P>) => JSX.Element;
+  renderComponents: (components: DocumentComponent<any>[]) => JSX.Element;
   renderChildren: (components: DocumentComponent<any>[]) => JSX.Element;
-  renderContent: (component: DocumentComponent<T>) => JSX.Element;
+  renderContent: (component: DocumentComponent<P>) => JSX.Element;
 }

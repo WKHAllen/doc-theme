@@ -36,6 +36,10 @@ export default class App extends React.Component<{}, AppState> {
     return (
       <Component
         component={component}
+        renderComponent={(c: DocumentComponent<T>) => this.renderComponent(c)}
+        renderComponents={(c: DocumentComponent<any>[]) =>
+          this.renderComponents(c)
+        }
         renderChildren={(c: DocumentComponent<any>[]) =>
           this.renderComponents(c)
         }
@@ -58,6 +62,7 @@ export default class App extends React.Component<{}, AppState> {
 
   /**
    * Render a component's content and properties.
+   *
    * @param component The component to render.
    * @returns The resulting rendered component.
    */
