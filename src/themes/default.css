@@ -38,3 +38,7 @@
 .standard-link:active {
   color: #0000cd;
 }
+
+.pill {
+  border-radius: 100vw;
+}

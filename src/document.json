@@ -85,6 +85,14 @@
                     "content": "."
                   }
                 ]
+              },
+              {
+                "type": "image",
+                "classes": ["pill"],
+                "properties": {
+                  "source": "/favicon.ico"
+                },
+                "content": "Favicon"
               }
             ]
           }
