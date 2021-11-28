@@ -25,21 +25,25 @@ export default class Table extends React.Component<
         <table className={this.props.component.classes?.join(" ")}>
           {this.props.component.properties?.headers &&
           this.props.component.properties.headers.length > 0 ? (
-            <tr>
-              {this.props.component.properties.headers.map((header) => (
-                <th>{this.props.renderComponent(header)}</th>
-              ))}
-            </tr>
+            <thead>
+              <tr>
+                {this.props.component.properties.headers.map((header) => (
+                  <th>{this.props.renderComponent(header)}</th>
+                ))}
+              </tr>
+            </thead>
           ) : (
             ""
           )}
-          {this.props.component.content?.map((row) => (
-            <tr>
-              {row.map((item) => (
-                <td>{this.props.renderComponent(item)}</td>
-              ))}
-            </tr>
-          ))}
+          <tbody>
+            {this.props.component.content?.map((row) => (
+              <tr>
+                {row.map((item) => (
+                  <td>{this.props.renderComponent(item)}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
         </table>
       </>
     );

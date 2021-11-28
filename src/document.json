@@ -12,45 +12,25 @@
             "classes": ["inner"],
             "children": [
               {
+                "type": "container",
+                "classes": ["text-center"],
+                "children": [
+                  {
+                    "type": "image",
+                    "classes": ["pill"],
+                    "properties": {
+                      "source": "/favicon.ico"
+                    },
+                    "content": "Favicon"
+                  }
+                ]
+              },
+              {
                 "type": "header",
-                "content": "Header 1",
+                "classes": ["text-center"],
+                "content": "Doc Theme",
                 "properties": {
                   "size": 1
-                }
-              },
-              {
-                "type": "header",
-                "content": "Header 2",
-                "properties": {
-                  "size": 2
-                }
-              },
-              {
-                "type": "header",
-                "content": "Header 3",
-                "properties": {
-                  "size": 3
-                }
-              },
-              {
-                "type": "header",
-                "content": "Header 4",
-                "properties": {
-                  "size": 4
-                }
-              },
-              {
-                "type": "header",
-                "content": "Header 5",
-                "properties": {
-                  "size": 5
-                }
-              },
-              {
-                "type": "header",
-                "content": "Header 6",
-                "properties": {
-                  "size": 6
                 }
               },
               {
@@ -85,14 +65,6 @@
                     "content": "."
                   }
                 ]
-              },
-              {
-                "type": "image",
-                "classes": ["pill"],
-                "properties": {
-                  "source": "/favicon.ico"
-                },
-                "content": "Favicon"
               },
               {
                 "type": "text",

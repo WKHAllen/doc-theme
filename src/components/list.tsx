@@ -17,14 +17,14 @@ export default class List extends React.Component<ComponentProps<ListProps>> {
       <>
         {!this.props.component.properties?.ordered ?? false ? (
           <ul className={this.props.component.classes?.join(" ")}>
-            {this.props.component.children?.map((child) => (
-              <li>{this.props.renderComponent(child)}</li>
+            {this.props.component.children?.map((child, i) => (
+              <li key={i}>{this.props.renderComponent(child)}</li>
             ))}
           </ul>
         ) : (
           <ol className={this.props.component.classes?.join(" ")}>
-            {this.props.component.children?.map((child) => (
-              <li>{this.props.renderComponent(child)}</li>
+            {this.props.component.children?.map((child, i) => (
+              <li key={i}>{this.props.renderComponent(child)}</li>
             ))}
           </ol>
         )}

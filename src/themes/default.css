@@ -24,6 +24,10 @@
   text-align: justify;
 }
 
+.center {
+  margin: auto;
+}
+
 .standard-link {
   color: #2323ff;
   text-decoration: none;
