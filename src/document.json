@@ -40,6 +40,7 @@
               },
               {
                 "type": "text",
+                "classes": ["text-justified"],
                 "children": [
                   {
                     "type": "container",
@@ -68,6 +69,7 @@
               },
               {
                 "type": "text",
+                "classes": ["text-justified"],
                 "content": "The project supports the following components out of the box:"
               },
               {
@@ -106,6 +108,7 @@
               },
               {
                 "type": "text",
+                "classes": ["text-justified"],
                 "content": "See more info on each built-in component:"
               },
               {
@@ -262,6 +265,7 @@
               },
               {
                 "type": "text",
+                "classes": ["text-justified"],
                 "content": "Custom components can be created to provide additional behavior to documents. See the implementation for the built-in components for details."
               }
             ]
